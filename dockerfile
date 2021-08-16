@@ -1,4 +1,4 @@
-FROM maven:3.8.1-jdk-11 AS build
+FROM maven:3.6.0-jdk-11-slim
 WORKDIR /freeuni-hub
 COPY src ./src
 COPY pom.xml ./
