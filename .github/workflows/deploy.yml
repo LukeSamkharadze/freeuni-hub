@@ -38,4 +38,4 @@ jobs:
           cd /server/${{ github.event.repository.name }}
           docker-compose down
           docker rmi ${{ secrets.REGISTRY_USER }}/${{ github.event.repository.name }}
-          docker-compose up
+          docker-compose up --detach
